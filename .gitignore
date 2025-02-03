@@ -1,0 +1,10 @@
+.env
+.idea/
+.venv/
+TEST.py
+__pycache__/
+app/__pycache__/
+app/database/__pycache__/
+plan.pptx
+problems.txt
+pyproject.toml

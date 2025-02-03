@@ -1,0 +1,815 @@
+2025-02-02 17:47:14,626 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 17:47:14,627 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 17:47:14,628 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 17:47:14,628 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 17:47:14,628 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 17:47:14,629 - __main__ - INFO - Starting Bot...
+2025-02-02 17:47:14,629 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 17:47:14,835 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 17:47:19,222 - aiogram.event - INFO - Update id=376201402 is not handled. Duration 15 ms by bot id=6967280071
+2025-02-02 17:47:19,223 - aiogram.event - ERROR - Cause exception while process update id=376201402 by bot id=6967280071
+AttributeError: 'int' object has no attribute 'admin_permissions'
+Traceback (most recent call last):
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\app\user.py", line 53, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\app\user.py", line 166, in admin_list
+    user_cache if admin.admin_permissions==True]
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'admin_permissions'
+2025-02-02 17:48:50,691 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 17:48:50,694 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 17:48:50,953 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 17:49:00,522 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 17:49:00,522 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 17:49:00,523 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 17:49:00,524 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 17:49:00,524 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 17:49:00,524 - __main__ - INFO - Starting Bot...
+2025-02-02 17:49:00,524 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 17:49:00,731 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 17:49:00,823 - aiogram.event - INFO - Update id=376201403 is not handled. Duration 0 ms by bot id=6967280071
+2025-02-02 17:49:00,823 - aiogram.event - ERROR - Cause exception while process update id=376201403 by bot id=6967280071
+KeyError: 1
+Traceback (most recent call last):
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\app\user.py", line 53, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Pyth_learn\Projects\Hakaton\Baga\app\user.py", line 167, in admin_list
+    logger.info(user_cache[1].admin_permissions)
+                ~~~~~~~~~~^^^
+KeyError: 1
+2025-02-02 18:03:30,914 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 18:03:30,915 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 18:03:31,168 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 18:03:36,996 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 18:03:36,996 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 18:03:36,997 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 18:03:36,997 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 18:03:36,998 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 18:03:36,998 - __main__ - INFO - Starting Bot...
+2025-02-02 18:03:36,998 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 18:03:37,205 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 18:03:39,299 - aiogram.event - INFO - Update id=376201404 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 18:03:56,340 - aiogram.event - INFO - Update id=376201405 is handled. Duration 234 ms by bot id=6967280071
+2025-02-02 18:03:58,753 - aiogram.event - INFO - Update id=376201406 is handled. Duration 281 ms by bot id=6967280071
+2025-02-02 18:04:28,809 - aiogram.event - INFO - Update id=376201407 is handled. Duration 218 ms by bot id=6967280071
+2025-02-02 18:04:58,763 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 18:04:58,766 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 18:04:58,776 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+2025-02-02 18:04:58,776 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6967280071)
+2025-02-02 18:04:59,042 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 18:05:03,338 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 18:05:03,338 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 18:05:03,339 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 18:05:03,340 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 18:05:03,340 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 18:05:03,340 - __main__ - INFO - Starting Bot...
+2025-02-02 18:05:03,340 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 18:05:03,558 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 18:05:03,876 - aiogram.event - INFO - Update id=376201408 is handled. Duration 234 ms by bot id=6967280071
+2025-02-02 18:05:06,779 - aiogram.event - INFO - Update id=376201409 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 18:05:07,952 - aiogram.event - INFO - Update id=376201410 is handled. Duration 186 ms by bot id=6967280071
+2025-02-02 18:05:08,951 - aiogram.event - INFO - Update id=376201411 is handled. Duration 217 ms by bot id=6967280071
+2025-02-02 19:40:43,822 - aiogram.event - INFO - Update id=376201412 is handled. Duration 311 ms by bot id=6967280071
+2025-02-02 20:35:26,904 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:35:26,904 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:35:27,160 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:35:33,609 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:35:33,609 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:35:33,612 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:35:33,613 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:35:33,613 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:35:33,613 - __main__ - INFO - Starting Bot...
+2025-02-02 20:35:33,613 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:35:33,820 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:36:49,044 - aiogram.event - INFO - Update id=376201413 is handled. Duration 702 ms by bot id=6967280071
+2025-02-02 20:36:51,296 - aiogram.event - INFO - Update id=376201414 is handled. Duration 109 ms by bot id=6967280071
+2025-02-02 20:37:07,057 - aiogram.event - INFO - Update id=376201415 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:37:24,770 - aiogram.event - INFO - Update id=376201416 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:37:26,493 - aiogram.event - INFO - Update id=376201417 is handled. Duration 422 ms by bot id=6967280071
+2025-02-02 20:37:28,398 - aiogram.event - INFO - Update id=376201418 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 20:37:29,588 - aiogram.event - INFO - Update id=376201419 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:37:51,865 - aiogram.event - INFO - Update id=376201420 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:40:09,553 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:40:09,559 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:40:09,814 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:40:15,538 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:40:15,538 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:40:15,539 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:40:15,539 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:40:15,540 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:40:15,540 - __main__ - INFO - Starting Bot...
+2025-02-02 20:40:15,540 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:40:15,752 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:40:17,450 - aiogram.event - INFO - Update id=376201421 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 20:40:18,655 - aiogram.event - INFO - Update id=376201422 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 20:40:20,528 - aiogram.event - INFO - Update id=376201423 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 20:40:21,596 - aiogram.event - INFO - Update id=376201424 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:40:57,257 - aiogram.event - INFO - Update id=376201425 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:40:58,498 - aiogram.event - INFO - Update id=376201426 is handled. Duration 280 ms by bot id=6967280071
+2025-02-02 20:40:59,693 - aiogram.event - INFO - Update id=376201427 is handled. Duration 108 ms by bot id=6967280071
+2025-02-02 20:41:00,672 - aiogram.event - INFO - Update id=376201428 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 20:41:02,034 - aiogram.event - INFO - Update id=376201429 is handled. Duration 187 ms by bot id=6967280071
+2025-02-02 20:41:03,244 - aiogram.event - INFO - Update id=376201430 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:41:05,179 - aiogram.event - INFO - Update id=376201431 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:41:06,889 - aiogram.event - INFO - Update id=376201432 is handled. Duration 125 ms by bot id=6967280071
+2025-02-02 20:43:58,225 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:43:58,228 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:43:58,482 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:44:03,260 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:44:03,260 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:44:03,261 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:44:03,261 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:44:03,261 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:44:03,262 - __main__ - INFO - Starting Bot...
+2025-02-02 20:44:03,262 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:44:03,465 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:44:04,687 - aiogram.event - INFO - Update id=376201433 is handled. Duration 280 ms by bot id=6967280071
+2025-02-02 20:44:05,833 - aiogram.event - INFO - Update id=376201434 is handled. Duration 125 ms by bot id=6967280071
+2025-02-02 20:44:18,486 - app.database.requests - ERROR - update_admin_and_get: Unknown filter param 'username'. Allowed base values are ['EventUsers', 'admin_permissions', 'created_at', 'id', 'participants', 'tg_id', 'tg_name', 'tg_username']
+2025-02-02 20:44:18,486 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 20:44:18,708 - aiogram.event - INFO - Update id=376201435 is handled. Duration 219 ms by bot id=6967280071
+2025-02-02 20:45:33,135 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:45:33,139 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:45:33,393 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:45:39,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:45:39,224 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:45:39,225 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:45:39,225 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:45:39,225 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:45:39,225 - __main__ - INFO - Starting Bot...
+2025-02-02 20:45:39,225 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:45:39,430 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:45:40,292 - aiogram.event - INFO - Update id=376201436 is handled. Duration 327 ms by bot id=6967280071
+2025-02-02 20:45:42,484 - aiogram.event - INFO - Update id=376201437 is handled. Duration 187 ms by bot id=6967280071
+2025-02-02 20:46:07,493 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 20:46:07,494 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 20:46:07,812 - aiogram.event - INFO - Update id=376201438 is handled. Duration 312 ms by bot id=6967280071
+2025-02-02 20:47:10,775 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:47:10,779 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:47:11,041 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:47:15,425 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:47:15,425 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:47:15,427 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:47:15,427 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:47:15,427 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:47:15,427 - __main__ - INFO - Starting Bot...
+2025-02-02 20:47:15,427 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:47:15,652 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:47:16,535 - aiogram.event - INFO - Update id=376201439 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:47:18,101 - aiogram.event - INFO - Update id=376201440 is handled. Duration 93 ms by bot id=6967280071
+2025-02-02 20:47:22,393 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 20:47:22,393 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 20:47:22,637 - aiogram.event - INFO - Update id=376201441 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:47:52,862 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:47:52,872 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:47:53,124 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:47:58,082 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:47:58,082 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:47:58,083 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:47:58,084 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:47:58,084 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:47:58,084 - __main__ - INFO - Starting Bot...
+2025-02-02 20:47:58,084 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:47:58,274 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:48:01,577 - aiogram.event - INFO - Update id=376201442 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:48:04,487 - aiogram.event - INFO - Update id=376201443 is handled. Duration 108 ms by bot id=6967280071
+2025-02-02 20:48:06,260 - app.database.requests - INFO - update_admin_and_get: joraso
+2025-02-02 20:48:06,262 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 20:48:06,263 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 20:48:06,736 - aiogram.event - INFO - Update id=376201444 is handled. Duration 483 ms by bot id=6967280071
+2025-02-02 20:55:44,929 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:55:44,930 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:55:45,190 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:55:49,728 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:55:49,728 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:55:49,730 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:55:49,730 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:55:49,730 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:55:49,730 - __main__ - INFO - Starting Bot...
+2025-02-02 20:55:49,730 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:55:49,941 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:55:50,731 - aiogram.event - INFO - Update id=376201445 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 20:55:54,337 - aiogram.event - INFO - Update id=376201446 is not handled. Duration 0 ms by bot id=6967280071
+2025-02-02 20:55:59,625 - aiogram.event - INFO - Update id=376201447 is handled. Duration 172 ms by bot id=6967280071
+2025-02-02 20:56:03,072 - app.database.requests - INFO - update_admin_and_get: joraso
+2025-02-02 20:56:03,074 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 20:56:03,074 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 20:56:03,333 - aiogram.event - INFO - Update id=376201448 is handled. Duration 266 ms by bot id=6967280071
+2025-02-02 20:59:45,258 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 20:59:45,261 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 20:59:45,514 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:59:50,037 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:59:50,037 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 20:59:50,038 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 20:59:50,039 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 20:59:50,039 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 20:59:50,039 - __main__ - INFO - Starting Bot...
+2025-02-02 20:59:50,039 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 20:59:50,245 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 20:59:58,714 - aiogram.event - INFO - Update id=376201449 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 20:59:59,886 - aiogram.event - INFO - Update id=376201450 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 21:00:03,735 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 21:00:03,735 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 21:00:03,951 - aiogram.event - INFO - Update id=376201451 is handled. Duration 217 ms by bot id=6967280071
+2025-02-02 21:01:41,953 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:01:41,957 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:01:42,221 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:01:47,354 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:01:47,354 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:01:47,355 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:01:47,356 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:01:47,356 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:01:47,356 - __main__ - INFO - Starting Bot...
+2025-02-02 21:01:47,356 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:01:47,575 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:01:50,185 - aiogram.event - INFO - Update id=376201452 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 21:01:51,019 - aiogram.event - INFO - Update id=376201453 is handled. Duration 109 ms by bot id=6967280071
+2025-02-02 21:01:59,185 - app.database.requests - INFO - USER: aigul297
+2025-02-02 21:01:59,187 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 21:01:59,187 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 21:01:59,367 - aiogram.event - INFO - Update id=376201454 is handled. Duration 187 ms by bot id=6967280071
+2025-02-02 21:02:54,656 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:02:54,659 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:02:54,917 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:03:00,144 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:03:00,145 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:03:00,146 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:03:00,146 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:03:00,146 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:03:00,146 - __main__ - INFO - Starting Bot...
+2025-02-02 21:03:00,147 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:03:00,344 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:03:01,360 - aiogram.event - INFO - Update id=376201455 is handled. Duration 282 ms by bot id=6967280071
+2025-02-02 21:03:03,045 - aiogram.event - INFO - Update id=376201456 is handled. Duration 172 ms by bot id=6967280071
+2025-02-02 21:03:05,615 - app.database.requests - INFO - USER: Aigul
+2025-02-02 21:03:05,617 - app.database.requests - ERROR - update_admin_and_get: Multiple objects returned for "User", expected exactly one
+2025-02-02 21:03:05,618 - app.user - ERROR - cannot unpack non-iterable NoneType object
+2025-02-02 21:03:05,910 - aiogram.event - INFO - Update id=376201457 is handled. Duration 297 ms by bot id=6967280071
+2025-02-02 21:05:15,641 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:05:15,644 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:05:15,903 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:05:21,331 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:05:21,331 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:05:21,332 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:05:21,333 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:05:21,333 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:05:21,333 - __main__ - INFO - Starting Bot...
+2025-02-02 21:05:21,333 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:05:21,548 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:05:30,893 - aiogram.event - INFO - Update id=376201458 is handled. Duration 500 ms by bot id=6967280071
+2025-02-02 21:05:31,986 - aiogram.event - INFO - Update id=376201459 is handled. Duration 358 ms by bot id=6967280071
+2025-02-02 21:05:33,264 - app.database.requests - INFO - USER: Aigul
+2025-02-02 21:05:33,468 - aiogram.event - INFO - Update id=376201460 is handled. Duration 202 ms by bot id=6967280071
+2025-02-02 21:06:14,338 - aiogram.event - INFO - Update id=376201461 is handled. Duration 219 ms by bot id=6967280071
+2025-02-02 21:06:15,512 - aiogram.event - INFO - Update id=376201462 is handled. Duration 156 ms by bot id=6967280071
+2025-02-02 21:06:36,815 - app.database.requests - INFO - USER: Aigul
+2025-02-02 21:06:37,224 - aiogram.event - INFO - Update id=376201463 is handled. Duration 422 ms by bot id=6967280071
+2025-02-02 21:11:10,015 - aiogram.event - INFO - Update id=376201464 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 21:11:11,636 - aiogram.event - INFO - Update id=376201465 is handled. Duration 141 ms by bot id=6967280071
+2025-02-02 21:11:13,865 - app.database.requests - INFO - USER: Саит
+2025-02-02 21:11:14,230 - aiogram.event - INFO - Update id=376201466 is handled. Duration 359 ms by bot id=6967280071
+2025-02-02 21:11:19,233 - aiogram.event - INFO - Update id=376201467 is handled. Duration 327 ms by bot id=6967280071
+2025-02-02 21:12:07,731 - aiogram.event - INFO - Update id=376201468 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 21:12:09,274 - aiogram.event - INFO - Update id=376201469 is handled. Duration 157 ms by bot id=6967280071
+2025-02-02 21:12:16,448 - app.user - CRITICAL - RTRE
+2025-02-02 21:12:16,739 - aiogram.event - INFO - Update id=376201470 is handled. Duration 297 ms by bot id=6967280071
+2025-02-02 21:12:23,720 - aiogram.event - INFO - Update id=376201471 is handled. Duration 218 ms by bot id=6967280071
+2025-02-02 21:12:25,191 - aiogram.event - INFO - Update id=376201472 is handled. Duration 92 ms by bot id=6967280071
+2025-02-02 21:12:29,537 - app.user - CRITICAL - Арьуз
+2025-02-02 21:12:29,898 - aiogram.event - INFO - Update id=376201473 is handled. Duration 359 ms by bot id=6967280071
+2025-02-02 21:15:34,276 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:15:34,280 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:15:34,539 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:34:07,234 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:34:07,234 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:34:07,236 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:34:07,236 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:34:07,237 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:34:07,237 - __main__ - INFO - Starting Bot...
+2025-02-02 21:34:07,238 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:34:07,448 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:34:13,612 - aiogram.event - INFO - Update id=376201474 is handled. Duration 422 ms by bot id=6967280071
+2025-02-02 21:34:39,022 - aiogram.event - INFO - Update id=376201475 is handled. Duration 547 ms by bot id=6967280071
+2025-02-02 21:34:48,543 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:34:48,547 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:34:48,818 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:34:53,697 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:34:53,698 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:34:53,700 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:34:53,701 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:34:53,701 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:34:53,702 - __main__ - INFO - Starting Bot...
+2025-02-02 21:34:53,702 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:34:53,928 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:34:57,852 - aiogram.event - INFO - Update id=376201476 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 21:35:04,177 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:35:04,185 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:35:04,452 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:56:22,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:56:22,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:56:22,222 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:56:22,223 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:56:22,223 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:56:22,223 - __main__ - INFO - Starting Bot...
+2025-02-02 21:56:22,223 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:56:22,432 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:56:22,923 - aiogram.event - INFO - Update id=376201478 is handled. Duration 405 ms by bot id=6967280071
+2025-02-02 21:56:23,135 - aiogram.event - INFO - Update id=376201479 is handled. Duration 609 ms by bot id=6967280071
+2025-02-02 21:56:23,165 - aiogram.event - INFO - Update id=376201482 is handled. Duration 609 ms by bot id=6967280071
+2025-02-02 21:56:23,213 - aiogram.event - INFO - Update id=376201481 is handled. Duration 656 ms by bot id=6967280071
+2025-02-02 21:56:23,252 - aiogram.event - INFO - Update id=376201480 is handled. Duration 734 ms by bot id=6967280071
+2025-02-02 21:56:27,760 - aiogram.event - INFO - Update id=376201483 is not handled. Duration 0 ms by bot id=6967280071
+2025-02-02 21:56:27,760 - aiogram.event - ERROR - Cause exception while process update id=376201483 by bot id=6967280071
+AttributeError: 'int' object has no attribute 'admin_permissions'
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 67, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 167, in admin_list
+    if v.admin_permissions == True:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'admin_permissions'
+2025-02-02 21:57:10,254 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:57:10,260 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:57:10,523 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:57:15,828 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:57:15,828 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:57:15,830 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:57:15,830 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:57:15,830 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:57:15,830 - __main__ - INFO - Starting Bot...
+2025-02-02 21:57:15,830 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:57:16,049 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:57:16,933 - app.user - INFO - 1933865493
+2025-02-02 21:57:17,125 - aiogram.event - INFO - Update id=376201484 is not handled. Duration 187 ms by bot id=6967280071
+2025-02-02 21:57:17,126 - aiogram.event - ERROR - Cause exception while process update id=376201484 by bot id=6967280071
+TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 53, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 170, in admin_list
+    await call.message.answer(text, reply_markup=await kb.edit_admins())
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+2025-02-02 21:57:27,864 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:57:27,867 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:57:28,133 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:57:32,641 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:57:32,641 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:57:32,643 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:57:32,643 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:57:32,643 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:57:32,643 - __main__ - INFO - Starting Bot...
+2025-02-02 21:57:32,643 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:57:32,876 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:57:33,649 - app.user - INFO - 1933865493
+2025-02-02 21:57:34,066 - aiogram.event - INFO - Update id=376201485 is handled. Duration 420 ms by bot id=6967280071
+2025-02-02 21:58:00,539 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:58:00,543 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:58:00,800 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:58:06,101 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:58:06,101 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:58:06,103 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:58:06,103 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:58:06,103 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:58:06,103 - __main__ - INFO - Starting Bot...
+2025-02-02 21:58:06,103 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:58:06,290 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:58:10,616 - aiogram.event - INFO - Update id=376201486 is not handled. Duration 0 ms by bot id=6967280071
+2025-02-02 21:58:10,616 - aiogram.event - ERROR - Cause exception while process update id=376201486 by bot id=6967280071
+AttributeError: 'int' object has no attribute 'tg_name'
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 53, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 167, in admin_list
+    logger.info(v.tg_name)
+                ^^^^^^^^^
+AttributeError: 'int' object has no attribute 'tg_name'
+2025-02-02 21:59:13,333 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 21:59:13,336 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 21:59:13,596 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:59:18,855 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:59:18,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 21:59:18,857 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 21:59:18,857 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 21:59:18,858 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 21:59:18,858 - __main__ - INFO - Starting Bot...
+2025-02-02 21:59:18,858 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 21:59:19,070 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 21:59:21,761 - app.user - INFO - k = 0; v = 1933865493
+2025-02-02 21:59:21,762 - app.user - INFO - user_cache = {1933865493: <User: 45>}
+2025-02-02 21:59:21,762 - aiogram.event - INFO - Update id=376201487 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 22:00:03,862 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:00:03,866 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:00:04,125 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:00:09,562 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:00:09,562 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:00:09,564 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 22:00:09,564 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 22:00:09,564 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 22:00:09,565 - __main__ - INFO - Starting Bot...
+2025-02-02 22:00:09,565 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 22:00:09,775 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:00:10,467 - aiogram.event - INFO - Update id=376201488 is not handled. Duration 0 ms by bot id=6967280071
+2025-02-02 22:00:10,467 - aiogram.event - ERROR - Cause exception while process update id=376201488 by bot id=6967280071
+TypeError: cannot unpack non-iterable int object
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 53, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\Baga\app\user.py", line 166, in admin_list
+    for k, v in user_cache:
+        ^^^^
+TypeError: cannot unpack non-iterable int object
+2025-02-02 22:01:02,603 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:01:02,606 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:01:02,859 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:01:07,824 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:01:07,824 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:01:07,826 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 22:01:07,826 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 22:01:07,826 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 22:01:07,826 - __main__ - INFO - Starting Bot...
+2025-02-02 22:01:07,826 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 22:01:08,039 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:01:14,371 - app.user - INFO - k = Саит
+2025-02-02 22:01:14,371 - app.user - INFO - user_cache = {1933865493: <User: 45>}
+2025-02-02 22:01:14,371 - aiogram.event - INFO - Update id=376201489 is handled. Duration 0 ms by bot id=6967280071
+2025-02-02 22:03:19,948 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:03:19,952 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:03:20,211 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:03:25,470 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:03:25,471 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:03:25,472 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 22:03:25,473 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 22:03:25,473 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 22:03:25,473 - __main__ - INFO - Starting Bot...
+2025-02-02 22:03:25,473 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 22:03:25,667 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:03:27,765 - aiogram.event - INFO - Update id=376201490 is handled. Duration 422 ms by bot id=6967280071
+2025-02-02 22:09:40,884 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:09:40,885 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:09:41,147 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:09:46,272 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:09:46,273 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:09:46,274 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 22:09:46,274 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 22:09:46,274 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 22:09:46,274 - __main__ - INFO - Starting Bot...
+2025-02-02 22:09:46,275 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 22:09:46,482 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:09:47,493 - aiogram.event - INFO - Update id=376201491 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 22:09:51,558 - aiogram.event - INFO - Update id=376201492 is handled. Duration 109 ms by bot id=6967280071
+2025-02-02 22:10:02,133 - app.database.requests - INFO - USER: Саит
+2025-02-02 22:10:02,423 - aiogram.event - INFO - Update id=376201493 is handled. Duration 296 ms by bot id=6967280071
+2025-02-02 22:10:05,540 - aiogram.event - INFO - Update id=376201494 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 22:10:13,165 - aiogram.event - INFO - Update id=376201495 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 22:10:15,085 - app.database.requests - INFO - USER: Саит
+2025-02-02 22:10:15,376 - aiogram.event - INFO - Update id=376201496 is handled. Duration 297 ms by bot id=6967280071
+2025-02-02 22:10:20,884 - aiogram.event - INFO - Update id=376201497 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 22:10:23,435 - aiogram.event - INFO - Update id=376201498 is handled. Duration 93 ms by bot id=6967280071
+2025-02-02 22:10:24,500 - aiogram.event - INFO - Update id=376201499 is handled. Duration 108 ms by bot id=6967280071
+2025-02-02 22:10:25,685 - app.database.requests - INFO - USER: Саит
+2025-02-02 22:10:25,931 - aiogram.event - INFO - Update id=376201500 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:10:29,083 - aiogram.event - INFO - Update id=376201501 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:10:57,866 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:10:57,870 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:10:58,127 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:13:07,766 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:13:07,766 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-02 22:13:07,768 - apscheduler.scheduler - INFO - Added job "delete_events" to job store "default"
+2025-02-02 22:13:07,768 - apscheduler.scheduler - INFO - Added job "update" to job store "default"
+2025-02-02 22:13:07,768 - apscheduler.scheduler - INFO - Scheduler started
+2025-02-02 22:13:07,768 - __main__ - INFO - Starting Bot...
+2025-02-02 22:13:07,768 - aiogram.dispatcher - INFO - Start polling
+2025-02-02 22:13:07,978 - aiogram.dispatcher - INFO - Run polling for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
+2025-02-02 22:13:13,742 - aiogram.event - INFO - Update id=376201502 is handled. Duration 717 ms by bot id=6967280071
+2025-02-02 22:13:16,389 - aiogram.event - INFO - Update id=376201503 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:13:20,870 - aiogram.event - INFO - Update id=376201504 is handled. Duration 437 ms by bot id=6967280071
+2025-02-02 22:13:26,597 - aiogram.event - INFO - Update id=376201505 is handled. Duration 297 ms by bot id=6967280071
+2025-02-02 22:13:32,026 - aiogram.event - INFO - Update id=376201506 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 22:13:34,410 - aiogram.event - INFO - Update id=376201507 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 22:13:37,030 - aiogram.event - INFO - Update id=376201508 is handled. Duration 187 ms by bot id=6967280071
+2025-02-02 22:13:39,417 - aiogram.event - INFO - Update id=376201509 is handled. Duration 94 ms by bot id=6967280071
+2025-02-02 22:13:40,892 - aiogram.event - INFO - Update id=376201510 is handled. Duration 422 ms by bot id=6967280071
+2025-02-02 22:13:43,829 - aiogram.event - INFO - Update id=376201511 is handled. Duration 92 ms by bot id=6967280071
+2025-02-02 22:14:02,483 - aiogram.event - INFO - Update id=376201512 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:14:04,236 - aiogram.event - INFO - Update id=376201513 is handled. Duration 483 ms by bot id=6967280071
+2025-02-02 22:14:06,468 - aiogram.event - INFO - Update id=376201514 is handled. Duration 77 ms by bot id=6967280071
+2025-02-02 22:14:08,805 - aiogram.event - INFO - Update id=376201515 is handled. Duration 155 ms by bot id=6967280071
+2025-02-02 22:14:12,724 - aiogram.event - INFO - Update id=376201516 is handled. Duration 218 ms by bot id=6967280071
+2025-02-02 22:14:14,053 - aiogram.event - INFO - Update id=376201517 is handled. Duration 171 ms by bot id=6967280071
+2025-02-02 22:14:19,863 - aiogram.event - INFO - Update id=376201518 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:14:24,661 - aiogram.event - INFO - Update id=376201519 is handled. Duration 125 ms by bot id=6967280071
+2025-02-02 22:14:26,235 - aiogram.event - INFO - Update id=376201520 is handled. Duration 250 ms by bot id=6967280071
+2025-02-02 22:14:36,827 - aiogram.event - INFO - Update id=376201521 is handled. Duration 265 ms by bot id=6967280071
+2025-02-02 22:14:38,513 - aiogram.event - INFO - Update id=376201522 is handled. Duration 125 ms by bot id=6967280071
+2025-02-02 22:14:40,349 - aiogram.event - INFO - Update id=376201523 is handled. Duration 234 ms by bot id=6967280071
+2025-02-02 22:14:47,404 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-02 22:14:47,409 - tortoise - INFO - Tortoise-ORM shutdown
+2025-02-02 22:14:47,679 - aiogram.dispatcher - INFO - Polling stopped for bot @crypto_Salavat_bot id=6967280071 - 'Baga_training'
